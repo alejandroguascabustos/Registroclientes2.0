@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Servicios - Bicitienda</title>
+    <link rel="icon" href="/5. Registro de clientes/Img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="encabezado-global">
+            <!-- Creamos un contenedor que tenga imagen y logo -->
+            <div class="logo-title">
+                <img class="logo" src="img/logo.png" alt="logo empresa">
+                <a href="index.html">Bicitienda</a>
+            </div>
+            <nav>
+                <a href="index.html" class="ver-registros" alt="historial de facturas">Registro</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Teléfono</th>
+                <th>Identificación</th>
+                <th>Servicio</th>
+                <th>Observaciones</th>
+                <th>Total</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-body"></tbody>
+    </table>
+    </div>
+
+    <!-- Pop-up para editar registro -->
+    <div id="popup-editar" class="popup hidden">
+        <div class="formulariopop">
+            <form id="editar-form">
+                <h2>Editar Registro</h2>
+                <input id="editar-nombre" type="text" placeholder="Nombre" />
+                <input id="editar-telefono" type="text" placeholder="Teléfono" />
+                <input id="editar-identificacion" type="text" placeholder="Identificación" />
+                <input id="editar-servicio" type="text" placeholder="Servicio" />
+                <textarea class="observations" id="editar-observaciones" placeholder="Observaciones"></textarea>
+                <input id="editar-total" type="text" placeholder="Total" />
+                <button id="guardarCambios" type="submit">Guardar Cambios</button>
+                <button type="button" id="cerrar-popup">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>Mecabikes Store - 2025</p>
+    </footer>
+
+</body>
+
+</html>
